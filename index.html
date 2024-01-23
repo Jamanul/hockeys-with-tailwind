@@ -21,6 +21,18 @@
             font-family: "Manrope", sans-serif;
         }
     </style>
+    <!-- tailwind style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+             "gray-color": '#131318',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body class="font-manrope">
     <header class="container mx-auto">
@@ -59,7 +71,7 @@
         <section class="relative">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./images/1.png" class="" />
+                  <img src="./images/1.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 lg:left-10 lg:right-[86rem] lg:top-[40rem]">
                     <a href="#slide4" class="btn bg-black text-white btn-circle">❮</a> 
                     <a href="#slide2" class="btn bg-black text-white btn-circle">❯</a>
@@ -87,14 +99,43 @@
                   </div>
                 </div>
               </div>
-              <div class="bg-black p-8 space-y-4 lg:w-1/3 absolute lg:top-[30rem] lg:left-[55rem] rounded-2xl">
+              <div class="bg-black p-8 space-y-4 lg:w-1/3 lg:absolute lg:top-[30rem] lg:left-[55rem] rounded-2xl">
                 <h2 class="text-white text-xl lg:text-2xl">Meet all the heroes from the field</h2>
                 <p class="text-white">Meet all the best of the best players in our academy. From starting student to all the pro hockey players.</p>
               </div>
         </section>
     </header>
-    <main>
-
+    <main class="container mx-auto">
+      <!-- ring section   -->
+      <section class="my-16">
+        <div class="p-7 border-y-2 border-gray-300 border-dashed">
+          <h2 class="text-4xl font-extrabold text-center">Professional Hockeys Club</h2>
+          <p class="font-medium text-center text-gray-500 mt-6">Here you can look why we are the of the best club in the world. Look at your self and judge yourself.</p>
+        </div>
+        <div class="flex justify-around flex-col lg:flex-row my-10 gap-4 lg:gap-20">
+          <div class="text-center space-y-2">
+            <div class="radial-progress text-[#FF4240] rotate-[123deg]" style="--value:87;" role="progressbar"><span class="text-black font-extrabold -rotate-[123deg]">87%</span> </div>
+            <h2 class="text-xl font-semibold">Prayer Facility</h2>
+            <p class="font-normal">We give facilities that lessen the barriers <br> of time, money and other things.</p>
+          </div>
+          <div class="text-center space-y-2">
+            <div class="radial-progress text-[#49D293] rotate-[113deg]" style="--value:90;" role="progressbar"><span class="text-black font-extrabold -rotate-[113deg]">90%</span> </div>
+            <h2 class="text-xl font-semibold">Experienced Coach</h2>
+            <p class="font-normal">We got the best coaches in the world.</p>
+          </div>
+          <div class="text-center space-y-2">
+            <div class="radial-progress text-[#FFB546] rotate-[113deg]" style="--value:90;" role="progressbar"><span class="text-black font-extrabold -rotate-[113deg]">90%</span> </div>
+            <h2 class="text-xl font-semibold">Senior Player</h2>
+            <p class="font-normal">our senior players play around the world.</p>
+          </div>
+          <div class="text-center space-y-2">
+            <div class="radial-progress text-[#4C8DF1] rotate-[153deg]" style="--value:80;" role="progressbar"><span class="text-black font-extrabold -rotate-[153deg]">80%</span> </div>
+            <h2 class="text-xl font-semibold">Training Ground</h2>
+            <p class="font-normal">our training ground has the best facilities.</p>
+          </div>
+        </div>
+        </section>
+        
     </main>
     <footer>
 
